@@ -76,12 +76,12 @@ body {
 /* --- Mobile Styles (Screens under 768px) --- */
 @media (max-width: 768px) {
   /* Show the hamburger icon */
-  .menu-toggle {
+.menu-toggle {
     display: flex;
   }
 
   /* Hide the regular links or change them into a vertical dropdown */
-  .nav-links {
+.nav-links {
     display: none; /* We hide it until the user clicks the hamburger */
     flex-direction: column;
     position: absolute;
@@ -91,10 +91,10 @@ body {
     width: 100%;
     text-align: center;
     padding: 2rem 0;
-  }
+}
 
   /* Class to toggle visibility via JavaScript later */
-  .nav-links.active {
+.nav-links.active {
     display: flex;
   }
 }
