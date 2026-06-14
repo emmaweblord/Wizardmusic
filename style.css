@@ -1,0 +1,414 @@
+:root{
+    --white: #ffffff33;
+    --black:#00000033;
+    --royal-blue: #190dcd;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #7e410f;
+    color: #ffffff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(-white);
+}
+
+.navlinks{
+    display: flex;
+    gap: 17px;
+    list-style: none;  
+    align-items: center;  
+}
+
+.navlinks a {
+    font-weight: 70;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    justify-content: left;
+    font-size: 0.7rem;
+}
+.navlinks a:hover{
+    transition: 0.2s;
+    
+    color: #a2a2a2;
+}
+
+.logo{
+    align-items: relative;
+    display: flex;
+    border-radius: 40%;
+    justify-content: left;
+    margin-left: 5px;
+    margin-right: 5px;*/
+}
+
+.search a button{
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(163, 70, 30, 0.187);
+    padding: 6px 13px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: 0.2s;
+    align-items: flex-end;
+    vertical-align: middle;
+    justify-content: right;
+    margin-left: 10px;
+}
+
+.search a button:hover{
+    transition: 0.2s;
+    color: #a2a2a2;
+}
+
+.home{
+    background-image: url(wizard\ webpage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 110vh;
+    width: 100%;
+    align-items: center;
+    color: var(--white);
+    border-radius: %;
+}
+
+.mylogo2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home h3{
+    font-style: italic;
+    color: #ffff;
+    font-family:Verdana;
+    font-size: small;
+    justify-self: center;
+    font-weight: lighter;
+    margin: 0%;
+    padding: 520px 120px;
+}
+
+
+
+/* ==========================================================================
+   SECTION 1: ABOUT US
+   ========================================================================== */
+.about-section {
+    background-color: #1c1c1c;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.about-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+/* Split design background */
+.about-left {
+    flex: 1;
+    background-color: #dcdcdc; /* Light grey backdrop panel */
+    padding: 60px 40px;
+    display: flex;
+    justify-content: flex-end;
+    min-height: 450px;
+}
+
+.image-frame {
+    border: 2px solid #777;
+    padding: 10px;
+    background-color: #dcdcdc;
+    transform: translateX(120px); /* Overlaps into the dark side slightly */
+    z-index: 2;
+}
+
+.image-frame img {
+    display: block;
+    width: 100%;
+    padding: 10%;
+    max-width: 450px;
+    height: auto;
+    filter: grayscale(100%); /* Matches the monochrome theme */
+}
+
+.about-right {
+    flex: 1;
+    background-color: #1c1c1c;
+    padding: 60px 60px 60px 100px;
+}
+
+.about-right h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.about-right h2 .bold-text {
+    font-weight: 700;
+}
+
+.about-right p {
+    color: #cccccc;
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+.btn-learn {
+    display: inline-block;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 25px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-learn:hover {
+    background-color: #ffffff;
+    color: #1c1c1c;
+    transition: 01s;
+}
+
+/* Our Section */
+.our-service {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: var(--black);
+}
+
+.ourh2{
+    font-style: italic;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.step-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.step-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--wave-orange);
+    transition: 1.3s ease;
+}
+
+/* ==========================================================================
+   SECTION 2: NEED QUALITY SOUND?
+   ========================================================================== */
+.promo-section {
+    background-color: #222222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.promo-container {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.promo-content {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+/* Recreating the light block overlap effect */
+.text-block {
+    position: relative;
+    display: inline-block;
+    padding: 40px;
+}
+
+.text-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:240px;
+    height: 220px;
+    background-color: #dcdcdc;
+    z-index: 1;
+}
+
+.light-heading {
+    position: relative;
+    z-index: 3;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #555555;
+    display: block;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.main-heading {
+    position: relative;
+    z-index: 2;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-top: -20px;
+    letter-spacing: 1px;
+}
+
+.sub-text {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #999999;
+    max-width: 450px;
+    margin: 20px auto 0 auto;
+}
+
+/* Logo and Badge styling */
+.logo-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wm-logo {
+    font-size: 4.5rem;
+    font-weight: 300;
+    font-family: serif; /* Elegant styling for the logo initials */
+    font-style: italic;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+}
+
+.brand-name {
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 5px 25px;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    color: #000000;
+    font-weight: 600;
+    background-color: #ffffff;
+}
+
+/* ==========================================================================
+   SECTION 3: CONTACT INFORMATION (MINIMALIST)
+   ========================================================================== */
+.contact-page {
+    background-color: #ffffff;
+    color: #000000;
+    min-height: 100vh;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-top h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.contact-bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.grid-column h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.grid-column p {
+    font-size: 0.95rem;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.grid-column a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (MOBILE OPTIMIZATION)
+   ========================================================================== */
+@media (max-width: 968px) {
+    .about-container {
+        flex-direction: column;
+    }
+    .about-left {
+        width: 100%;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+    .image-frame {
+        transform: translateX(0);
+    }
+    .about-right {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .main-heading {
+        font-size: 2.5rem;
+    }
+    .contact-page {
+        padding: 60px 30px;
+    }
+    .contact-top h1 {
+        font-size: 2.5rem;
+    }
+    .contact-bottom-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-bottom-grid {
+        grid-template-columns: 1fr;
+    }
+}
