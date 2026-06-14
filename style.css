@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #7e410f;
+    background-color: #d09b6f;
     color: #ffffff;
     line-height: 1.6;
     scroll-behavior: smooth;
@@ -24,6 +24,7 @@ body {
     align-items: center;
     padding: 15px 40px;
     background-color: var(-white);
+    color: #fff;
 }
 
 .navlinks{
@@ -47,6 +48,55 @@ body {
     transition: 0.2s;
     
     color: #a2a2a2;
+}
+
+/* Hide the hamburger icon on desktop sizes */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Style the 3 white bars */
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff; /* White bars to match your image */
+  border-radius: 10px;    /* Gives them those rounded edges */
+  transition: all 0.3s ease;
+}
+
+
+/* --- Mobile Styles (Screens under 768px) --- */
+@media (max-width: 768px) {
+  /* Show the hamburger icon */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Hide the regular links or change them into a vertical dropdown */
+  .nav-links {
+    display: none; /* We hide it until the user clicks the hamburger */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #111;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  /* Class to toggle visibility via JavaScript later */
+  .nav-links.active {
+    display: flex;
+  }
 }
 
 .logo{
@@ -80,7 +130,7 @@ body {
 }
 
 .home{
-    background-image: url(wizard\ webpage.png);
+    background-image: url(Home\ Music\ Studio\ Inspiration.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -407,7 +457,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .contact-bottom-grid {
         grid-template-columns: 1fr;
     }
